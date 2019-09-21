@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en" style="height: 100%">
+<head>
+  <meta charset="UTF-8">
+  <base href="/">
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+<!--  <link rel="dns-prefetch" href="https://unpkg.com">-->
+
+  <title>xyz.io - .....</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+
+
+  <!-- Required styles for MDC Web -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&amp;display=swap" rel="stylesheet" media="screen">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons&amp;display=swap" rel="stylesheet" media="screen">
+
+
+  <!-- OpenTok.js library -->
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <script src="https://static.opentok.com/v2/js/opentok.js"></script>
+
+</head>
+<body style="margin: 0; height: 100%; font-family: Roboto, sans-serif">
+
+
+<div id="flex-container" style="height:100%; 
+                                display: flex; 
+                                flex-flow: column nowrap; 
+                                align-items: stretch; 
+                                justify-content: space-between">
+
+    <mat-card class="card mat-elevation-z0"
+              style="flex: 1; background-color: #ff0ade;">
+
+      <mat-card-content
+        class="tuneRippleEffect">
+
+        <h2 style="font-weight: 300;
+                   font-size: 60px;
+                   opacity: 0.5;">...title...</h2>
+
+
+      </mat-card-content>
+
+
+      <div id="publisher">
+
+      </div>
+
+    </mat-card>
+
+
+    <mat-card class="card mat-elevation-z0 bottomBar"
+              style="background-color: #ff0ade;
+              height: 100px;
+              display: flex;
+              flex-flow: row nowrap;
+              align-items: center;
+              justify-content: space-evenly">
+
+      <mat-card-actions>
+
+        <button mat-button matRipple 
+                id="broadcastToOriginal">
+          <i class="material-icons" style="font-size: 67px;">
+            cast
+          </i>
+        </button>
+      </mat-card-actions>
+
+    </mat-card>
+
+</div>
+
+
+<script src="main.js" type="module"></script>
+
+</body>
+</html>
