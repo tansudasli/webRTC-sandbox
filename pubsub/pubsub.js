@@ -41,7 +41,6 @@ var publisher = OT.initPublisher('publisher',
  * max connection = 3000 per publisher
  * max stream = 3000 per publisher
  */ 
-
 session.connect(token, (error) => {
 		if (error) {
 			handleError(error);
