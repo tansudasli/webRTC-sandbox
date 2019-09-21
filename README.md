@@ -1,4 +1,18 @@
 # webRTC w/ tokbox
 
-- . : illustrates broadcasting and translating scenario. one publishes w/ broadcast, listen and broadcast to a new session
-- pubsub : index.html publishes, listen.html listens the stream (video + audio). This part contains full implemented and tested. to be a backbone.
+- /pubsub : index.html publishes, listen.html listens the stream (video + audio). This part contains fully implementation to be used as **backbone.**
+- . : same as /pubsub but also contains more css and more buttons such as listen and broadcast
+
+
+# How to start
+
+- create tokbox account & dummy-project for apiKey and other related variables.
+
+# How to run - pubsub
+
+- `git clone ..`
+- edit `pubsub.js` for
+    - apiKey, sessionId. token w/ your own values.
+- run w/ live web server addon on vscode. Check `localhost:5500/pubsub/index.html` then `localhost:5500/pubsub/listen.html`.
+- close your audio to disable feedback noise!
+- open chrome developer and see console logs!
