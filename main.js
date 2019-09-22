@@ -77,12 +77,7 @@ if (subscribeToOriginal) {
 									  {insertMode: 'append', width: '100%', height: '250px'} 
 					);
 				})
-				.connect(token, (error) => {
-
-					error ? console.log(error.message) :
-							console.log('session connected');
-
-				});
+				.connect(token, (error) => handleError(error));
 		}); 
 }
 
